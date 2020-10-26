@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A Single Page Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!--this is a font awsome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="spa.css">
+</head>
+
+<body>
+    <main>
+        <div class="page active" id="toDo">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" data-target="toDo" class="nav-link oi oi-home">Courses To-Do</a></li>
+                    <li><a href="#" data-target="courses" class="nav-link">Courses</a></li>
+                </ul>
+            </div>
+            <div class="main-area">
+                <h1><span class="title">Courses</span>To-Do</h1>
+                <div class="inputDiv">
+                    <input type="text" class="input" placeholder="What Do You Want to Do...">
+                    <button class="add"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="container">
+                </div>
+            </div>
+        </div>
+        <!--End fyrst page-->
+        <div class="page" id="courses">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" data-target="toDo" class="nav-link">Courses To-Do</a></li>
+                    <li><a href="#" data-target="courses" class="nav-link">Courses</a></li>
+                    <!--<li><a href="#" data-target="detail" class="nav-link">Detail</a></li>-->
+                </ul>
+            </div>
+            <div class="main-area">
+                <h1>Beginner web development courses</h1>
+                <div class="container">
+                    <div class="boxes">
+                        <iframe width="460" height="215" src="https://www.youtube.com/embed/vQWlgd7hV4A" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="boxes">
+                        <iframe width="460" height="215" src="https://www.youtube.com/embed/Qqx_wzMmFeA" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="boxes">
+                        <iframe width="460" height="215" src="https://www.youtube.com/embed/WZQc7RUAg18" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="spa.js"></script>
+</body>
+
+</html>
